@@ -13,4 +13,16 @@ int ft_atoi(char *s)
         sign = sign * -1;
     else if (s[i] == 43)
         i++;
-    while (s[
+    while (s[i] >= 48 && s[i] <= 57)
+    {
+        nb = nb * 10 + (s[i] - '0');
+        i++;
+    }
+    return (sign * nb);
+}
+    
+    
+    
+    
+    
+    
